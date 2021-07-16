@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TrackDialog</string>
+    <string name="txt_message">Ban co mot tin nhan moi</string>
+    <string name="txt_title">Application</string>
+    <string name="txt_ok">Ok</string>
+    <string name="txt_canncel">Cancel</string>
+</resources>
