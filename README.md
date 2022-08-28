@@ -12,14 +12,16 @@ allprojects {
 dependencies {
 	implementation 'com.github.sonpxp:material-dialog-os:1.0.0'
 }
-  ```
+```
  
-  ```
-  -> AlertMaterialHelper.callDialogCustom
-  -> Example
+ ```
+  -> AlertMaterialHelper.`name_method()`
+
 ```
 
 ```
+-> Example
+  
 AlertMaterialHelper.showYesNoAlert(
             this,
             "hello",
@@ -27,9 +29,7 @@ AlertMaterialHelper.showYesNoAlert(
             onAgreeCallback = onAgreeCallback,
             onCancelCallback = onCancelCallback
         )
-```
 
-```
 private val onAgreeCallback: () -> Unit = {
 	// do something
 }
