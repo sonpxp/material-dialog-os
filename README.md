@@ -38,3 +38,13 @@ private val onCancelCallback: () -> Unit = {
 	// do something
 }
 ```
+
+```
+<style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+</style>
+
+Your theme must contain parent = "Theme.MaterialComponents ..." like the example above to avoid unexpected errors when using.
+```
