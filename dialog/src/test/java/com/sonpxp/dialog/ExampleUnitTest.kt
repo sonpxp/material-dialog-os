@@ -1,4 +1,4 @@
-package com.sonpxp.mydialog
+package com.sonpxp.dialog
 
 import org.junit.Test
 

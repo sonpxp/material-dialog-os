@@ -11,6 +11,11 @@
         <entry key="..\:/Kotlin/training/dialog-os/ModDialog/src/main/res/layout/cus_msg_ios.xml" value="0.24615384615384617" />
         <entry key="..\:/Kotlin/training/dialog-os/ModDialog/src/main/res/layout/cus_noti_ios.xml" value="0.24615384615384617" />
         <entry key="..\:/Kotlin/training/dialog-os/ModDialog/src/main/res/layout/cus_select_icon_ios.xml" value="0.24615384615384617" />
+        <entry key="..\:/Kotlin/training/dialog-os/app/src/main/res/layout/activity_main.xml" value="0.24615384615384617" />
+        <entry key="..\:/Kotlin/training/dialog-os/dialog/src/main/res/layout/cus_bottom_menu_ios.xml" value="0.24615384615384617" />
+        <entry key="..\:/Kotlin/training/dialog-os/dialog/src/main/res/layout/cus_msg_icon_ios.xml" value="0.24615384615384617" />
+        <entry key="..\:/Kotlin/training/dialog-os/dialog/src/main/res/layout/cus_msg_ios.xml" value="0.24615384615384617" />
+        <entry key="..\:/Kotlin/training/dialog-os/dialog/src/main/res/layout/cus_select_ios.xml" value="0.24615384615384617" />
       </map>
     </option>
   </component>

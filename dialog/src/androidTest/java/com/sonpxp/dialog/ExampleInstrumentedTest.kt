@@ -1,4 +1,4 @@
-package com.sonpxp.moddialog
+package com.sonpxp.dialog
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

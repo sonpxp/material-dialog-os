@@ -1,4 +1,4 @@
-package com.sonpxp.moddialog
+package com.sonpxp.dialog
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.sonpxp.moddialog.databinding.*
+import com.sonpxp.dialog.databinding.*
 
 
 class AlertMaterialHelper {
@@ -20,10 +20,10 @@ class AlertMaterialHelper {
             context: Context,
             title: String,
             msg: String,
-            onAgreeCallback: () -> Unit,
-            onCancelCallback: () -> Unit,
             textButtonLeft: String? = null,
             textButtonRight: String? = null,
+            onAgreeCallback: () -> Unit,
+            onCancelCallback: () -> Unit
         ) {
             val dialog = MaterialAlertDialogBuilder(context, R.style.PauseDialog)
             val binding =
@@ -54,10 +54,10 @@ class AlertMaterialHelper {
             context: Context,
             icon: Int,
             msg: String,
-            onAgreeCallback: () -> Unit,
-            onCancelCallback: () -> Unit,
             textButtonLeft: String? = null,
             textButtonRight: String? = null,
+            onAgreeCallback: () -> Unit,
+            onCancelCallback: () -> Unit
         ) {
             val dialog = MaterialAlertDialogBuilder(context, R.style.PauseDialog)
             val binding =
@@ -88,10 +88,12 @@ class AlertMaterialHelper {
             context: Context,
             title: String,
             msg: String,
-            onAgreeCallback: (text: String) -> Unit,
-            onCancelCallback: () -> Unit,
+            hint: String? = null,
+            textInput: String? = null,
             textButtonLeft: String? = null,
             textButtonRight: String? = null,
+            onAgreeCallback: (text: String) -> Unit,
+            onCancelCallback: () -> Unit
         ) {
             val dialog = MaterialAlertDialogBuilder(context, R.style.PauseDialog)
             val binding =
@@ -101,11 +103,17 @@ class AlertMaterialHelper {
                 binding.apply {
                     txtDialogTitle.text = title
                     txtDialogTip.text = msg
+
+                    if (hint != null) edtInput.hint = hint
+                    if (textInput != null) edtInput.setText(textInput)
+                    // if (textInput != null) edtInput.text = textInput.toEditable()
+
                     if (textButtonLeft != null) btnSelectCancel.text = textButtonLeft
                     btnSelectOk.setOnClickListener {
                         onAgreeCallback(edtInput.text.toString())
                         a.dismiss()
                     }
+
                     if (textButtonRight != null) btnSelectCancel.text = textButtonRight
                     btnSelectCancel.setOnClickListener {
                         onCancelCallback()
@@ -122,10 +130,12 @@ class AlertMaterialHelper {
             context: Context,
             icon: Int,
             msg: String,
-            onAgreeCallback: (text: String) -> Unit,
-            onCancelCallback: () -> Unit,
+            hint: String? = null,
+            textInput: String? = null,
             textButtonLeft: String? = null,
             textButtonRight: String? = null,
+            onAgreeCallback: (text: String) -> Unit,
+            onCancelCallback: () -> Unit
         ) {
             val dialog = MaterialAlertDialogBuilder(context, R.style.PauseDialog)
             val binding =
@@ -135,11 +145,15 @@ class AlertMaterialHelper {
                 binding.apply {
                     imgIcon.setImageResource(icon)
                     txtDialogTip.text = msg
+                    if (hint != null) edtInput.hint = hint
+                    if (textInput != null) edtInput.setText(textInput)
+
                     if (textButtonLeft != null) btnSelectCancel.text = textButtonLeft
                     btnSelectOk.setOnClickListener {
                         onAgreeCallback(edtInput.text.toString())
                         a.dismiss()
                     }
+
                     if (textButtonRight != null) btnSelectCancel.text = textButtonRight
                     btnSelectCancel.setOnClickListener {
                         onCancelCallback()
@@ -156,8 +170,8 @@ class AlertMaterialHelper {
             context: Context,
             title: String,
             msg: String,
-            onCancelCallback: () -> Unit,
             textButtonCenter: String? = null,
+            onCancelCallback: () -> Unit,
         ) {
             val dialog = MaterialAlertDialogBuilder(context, R.style.PauseDialog)
             val binding =
@@ -183,9 +197,8 @@ class AlertMaterialHelper {
             context: Context,
             icon: Int,
             msg: String,
-            onCancelCallback: () -> Unit,
             textButtonCenter: String? = null,
-            dismissButton: Boolean? = true
+            onCancelCallback: () -> Unit,
         ) {
             val dialog = MaterialAlertDialogBuilder(context, R.style.PauseDialog)
             val binding =
@@ -198,8 +211,7 @@ class AlertMaterialHelper {
                     if (textButtonCenter != null) btnSelectCancel.text = textButtonCenter
                     btnSelectCancel.setOnClickListener {
                         onCancelCallback()
-                        if (dismissButton == true)
-                            a.dismiss()
+                        a.dismiss()
                     }
                 }
             }
@@ -207,12 +219,16 @@ class AlertMaterialHelper {
 
         /*---------------cus button menu ios dialog-------------------*/
 
+        /**
+         * Incomplete - beta
+         * */
+
         @JvmStatic
         fun showButtonMenuAlert(
             context: Context,
             title: String? = null,
             currentPosition: Int,
-            onCancelCallback: () -> Unit,
+            onCancelCallback: () -> Unit
         ) {
             val dialog = MaterialAlertDialogBuilder(context, R.style.PauseDialog)
             val binding =
@@ -227,6 +243,7 @@ class AlertMaterialHelper {
                     val listButton: MutableList<String> = mutableListOf()
                     listButton.add("SMALL")
                     listButton.add("MEDIUM")
+                    listButton.add("HEIGHT")
 
                     btnCancel.setOnClickListener {
                         onCancelCallback()
