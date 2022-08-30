@@ -13,6 +13,7 @@ import com.sonpxp.moddialog.databinding.*
 class AlertMaterialHelper {
 
     /*---------------select dialog-------------------*/
+
     companion object {
         @JvmStatic
         fun showYesNoAlert(
