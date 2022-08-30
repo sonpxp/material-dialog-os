@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txt_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/split_horizontal" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btn_cancel"
         android:layout_width="0dp"
         android:layout_height="50dp"
@@ -60,6 +60,5 @@
         app:layout_constraintEnd_toEndOf="@+id/list_menu"
         app:layout_constraintStart_toStartOf="@+id/list_menu"
         app:layout_constraintTop_toBottomOf="@+id/list_menu" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

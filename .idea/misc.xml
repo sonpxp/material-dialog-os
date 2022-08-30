@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Kotlin/training/dialog-os/ModDialog/src/main/res/layout/cus_bottom_menu_ios.xml" value="0.24615384615384617" />
+        <entry key="..\:/Kotlin/training/dialog-os/ModDialog/src/main/res/layout/cus_input_icon_ios.xml" value="0.24615384615384617" />
+        <entry key="..\:/Kotlin/training/dialog-os/ModDialog/src/main/res/layout/cus_input_ios.xml" value="0.24615384615384617" />
+        <entry key="..\:/Kotlin/training/dialog-os/ModDialog/src/main/res/layout/cus_menu_ios.xml" value="0.24615384615384617" />
+        <entry key="..\:/Kotlin/training/dialog-os/ModDialog/src/main/res/layout/cus_msg_icon_ios.xml" value="0.24615384615384617" />
+        <entry key="..\:/Kotlin/training/dialog-os/ModDialog/src/main/res/layout/cus_msg_ios.xml" value="0.24615384615384617" />
+        <entry key="..\:/Kotlin/training/dialog-os/ModDialog/src/main/res/layout/cus_noti_ios.xml" value="0.24615384615384617" />
+        <entry key="..\:/Kotlin/training/dialog-os/ModDialog/src/main/res/layout/cus_select_icon_ios.xml" value="0.24615384615384617" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

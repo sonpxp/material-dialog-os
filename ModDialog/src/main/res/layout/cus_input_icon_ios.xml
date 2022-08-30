@@ -6,7 +6,7 @@
     android:layout_gravity="center"
     android:background="@color/white">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/img_icon"
         android:layout_width="@dimen/dp50"
         android:layout_height="@dimen/dp50"
@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/txt_dialog_tip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         android:gravity="center"
         android:text="@string/txt_message"
         android:textColor="@color/black"
-        android:textSize="13sp"
+        android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@+id/img_icon" />
 
     <EditText
@@ -54,7 +54,7 @@
         android:background="@color/ios_dialog_split_light"
         app:layout_constraintTop_toBottomOf="@+id/edt_input" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btn_select_ok"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -64,7 +64,7 @@
         android:gravity="center"
         android:text="@string/txt_ok"
         android:textColor="@color/ios_dlg_text"
-        android:textSize="17sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/split_vertical"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +79,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/split_horizontal" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btn_select_cancel"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -89,9 +89,10 @@
         android:gravity="center"
         android:text="@string/txt_canncel"
         android:textColor="@color/ios_dlg_text"
-        android:textSize="17sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/split_vertical"
         app:layout_constraintTop_toBottomOf="@+id/split_horizontal" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
