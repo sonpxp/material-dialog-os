@@ -10,7 +10,7 @@ allprojects {
 >Step 2. Add the dependency
 ```
 dependencies {
-	implementation 'com.github.sonpxp:material-dialog-os:1.0.0'
+	implementation 'com.github.sonpxp:material-dialog-os:new_version'
 }
 ```
  
